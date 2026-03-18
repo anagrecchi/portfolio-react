@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Colaborativo</title>
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #mensagem {
+            margin-top: 20px;
+            font-size: 18px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🚀 Projeto Colaborativo</h1>
+    <p>Clique no botão para testar:</p>
+
+    <button onclick="mostrarMensagem()">Clique aqui</button>
+
+    <div id="mensagem"></div>
+
+    <script>
+        function mostrarMensagem() {
+            document.getElementById("mensagem").innerText =
+                "Funcionalidade criada por João!";
+        }
+    </script>
+
+</body>
+</html>
